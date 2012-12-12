@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<style media="screen" type="text/css">
+.active{background-color: blue}
+
+
+.tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<section id="tabs">
+  <ul>
+    <li><a href="#2012-09-27" data-flights="6">Sep 27</a></li>
+    <li><a href="#2012-09-28" data-flights="5">Sep 28</a></li>
+    <li><a href="#2012-09-29" data-flights="5">Sep 29</a></li>
+  </ul>
+</section>
+
+
+<script type="text/javascript">
+
+
+function changeTab(e)
+  {
+    e.preventDefault();
+    $('#tabs li a.active').removeClass('active');
+    $(this).addClass('active');
+  }
+
+function shownumberofflights(e)
+  {
+    var num_flights = $('this').data('flights');
+    $('this').append("<span class='tooltip'> Number of flights" + num_flights +"</span>");
+  }
+
+function removenumberofflights(e)
+{
+  $('tabs span.tooltip').remove();
+
+}
+
+
+
+jQuery(function(){
+
+$('#tabs li a').bind{
+click: changeTab,
+mouseenter: shownumberofflights,
+mouseleave.removenumberofflights,
+
+}
+
+
+
+  $('#tabs li a').click(changeTab)
+  $("#tabs li:eq(2) a").click();
+  $('#tabs li a').mouseenter(shownumberofflights);
+    $('#tabs li a').mouseleave(removenumberofflights);
+});
+
+
+
+</script>
+
+
+</body>
+</html>

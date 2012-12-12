@@ -1,0 +1,15 @@
+
+<%= form_for(@mytube) do |v| %>
+
+
+<%= v.label :caption, "Enter Caption:" %>
+<%= v.text_field :caption, :size =>50  %>
+
+
+<%= v.label :url, "Enter Caption:" %>
+<%= v.text_field :url, :size =>50  %>
+
+<%= v.submit %>
+<%= link_to "Cancel" , videodbs_url %>
+
+<% end %>

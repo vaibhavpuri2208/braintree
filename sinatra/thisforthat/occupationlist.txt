@@ -1,0 +1,64 @@
+doctors
+lawyers
+teachers
+sanitation engineers
+accountants
+therapists
+nurses
+taxi drivers
+sales representatives
+pharmacists
+receptionists
+product evangelists
+cats
+web designers
+web developers
+recruiters
+marketers
+product managers
+software engineers
+tax consultants
+consultants
+architects
+interior designers
+scientists
+surgeons
+translators
+baristas
+bartenders
+public relations specialists
+internet marketers
+researchers
+jedis
+ninjas
+wizards
+dog lovers
+car collectors
+hipsters
+jocks
+artists
+teens
+bacon lovers
+delivery guys
+hackers
+travelers
+writers
+showoffs
+journalists
+grunge bands
+philosophers
+hypocrites
+hypochondriacs
+emoticon users
+movie buffs
+trivia lovers
+introverts
+extroverts
+people watchers
+Wall Street Executives
+investors
+venture capitalists
+statup junkies
+crab fisherman
+bow hunters
+veterinarians

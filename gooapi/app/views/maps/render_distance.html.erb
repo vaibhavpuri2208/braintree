@@ -1,9 +1,9 @@
 <h1>Rendering the Map</h1>
 
 
-<img src='http://maps.googleapis.com/maps/api/staticmap?center="<%= @json_response["results"][0]["geometry"]["location"]["lat"] %>,<%= @json_response["results"][0]["geometry"]["location"]["lng"] %>&size=400x400&sensor=false'>
+<img src='http://maps.googleapis.com/maps/api/staticmap?center=<%= @json_response["results"][0]["geometry"]["location"]["lat"].to_s %>,<%= @json_response["results"][0]["geometry"]["location"]["lng"].to_s %>&zoom=16&size=400x400&sensor=false'>
 
-<p>'http://maps.googleapis.com/maps/api/staticmap?center="<%= @json_response["results"][0]["geometry"]["location"]["lat"] %>,<%= @json_response["results"][0]["geometry"]["location"]["lng"] %>&zoom=11&size=200x200&sensor=false'</p>
+<p>http://maps.googleapis.com/maps/api/staticmap?center=<%= @json_response["results"][0]["geometry"]["location"]["lat"].to_s %>,<%= @json_response["results"][0]["geometry"]["location"]["lng"].to_s %>&zoom=11&size=200x200&sensor=false</p>
 
 <p>The Latitude is: <%= @json_response["results"][0]["geometry"]["location"]["lat"] %></p>
 

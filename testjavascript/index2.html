@@ -1,0 +1,30 @@
+<html>
+<head> <title>Testing Javascript</title>
+
+<script type="text/javascript">
+
+function GenerateNumber()
+{
+min = parseFloat(document.getElementbyId('miniBox').value);
+max = parseFloat(document.getElementbyId('maxBox').value);
+number = Math.floor (Math.random()*(max+min-1)+min);
+document.getElementbyId('outputbox').innerHTML = 'Your value is: ' + number
+}
+
+</script>
+
+</head>
+
+<body>
+
+<p>The numbers are selected between <input type='text' id='miniBox' size=3 value=0> and <input type='text' id='maxBox' size=3 value=10></p>
+
+<input type="button" value="Generate my number: " onClick="GenerateNumber();">
+
+<hr>
+<div id="outputbox"></div>
+</body>
+
+
+
+</html>

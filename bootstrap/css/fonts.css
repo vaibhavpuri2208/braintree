@@ -1,0 +1,92 @@
+/*Additional Fonts*/
+
+
+
+.font_bitter{
+font-family: 'Bitter', serif;
+font-weight: bold;
+
+}
+
+.darkred_color{
+color:#c1272d;
+
+}
+
+myprogbar
+{
+
+color:#F8ECC9; font-weight:bold;
+
+}
+
+.font_abz{
+font-family: 'ABeeZee', sans-serif;
+}
+
+div.box1:hover
+{
+
+background-color: blue;
+}
+
+
+.seperator{
+  width: 940px;
+  height: 20px;
+}
+
+.circlered {
+    background: #c1272d;
+	width:100px;
+	height:100px;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
+}
+
+.circleorange {
+    background: orange;
+ width:100px;
+	height:100px;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
+}
+
+.circlegreen {
+    background: green;
+    width:100px;
+	height:100px;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
+}
+
+
+.circleorange p {
+       padding: 2em 2em 0 2em;
+}
+
+.index{
+padding-left:10px;padding-top:0px;}
+
+.padmeleft50{
+padding-left:0px}
+
+.padmetop{
+padding-top:30px}
+
+.darkblue{
+color: #113D59;}
+
+.plaformheight{
+height:100px;
+border: 1px;}
+
+.mypara {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+}

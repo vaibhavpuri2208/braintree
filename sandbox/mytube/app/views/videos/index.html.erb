@@ -1,0 +1,14 @@
+<h1>Displaying all your videos</h1>
+
+
+<% Videodb.all.each do |v| %>
+
+<%= link_to v.caption, (v.url)  %>
+
+<%= link_to "Edit", edit_video_url(v.id)%> 
+<%= link_to "Delete", video_url(v.id), :method =>'delete' %> 
+
+
+
+<p>
+<% end %>

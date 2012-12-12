@@ -1,0 +1,21 @@
+<h1>Listing tweetboxes</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tweetboxes.each do |tweetbox| %>
+  <tr>
+    <td><%= link_to 'Show', tweetbox %></td>
+    <td><%= link_to 'Edit', edit_tweetbox_path(tweetbox) %></td>
+    <td><%= link_to 'Destroy', tweetbox, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tweetbox', new_tweetbox_path %>

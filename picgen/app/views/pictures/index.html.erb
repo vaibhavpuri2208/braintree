@@ -1,0 +1,14 @@
+<form action="/show" method ="post">
+URL: <input type="text" name="url">
+Title: <input type="text" name="title">
+<input type="submit" name="submitbtn" value="Submit Picture">
+</form>
+
+<br>
+<h1> Displaying all the cool pictures in the world</h1>
+
+<% @allpics.each do |current_pic| %>
+<img src="<%= current_pic.url %>">
+<% end %>
+
+
